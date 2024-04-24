@@ -1,0 +1,104 @@
+body{
+    font-family: "Hind", sans-serif;
+    color: #808080;
+    background-color: #ffffff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    text-transform: uppercase;
+    line-height: 120%;
+    font-weight: 700;
+    color: #141718;
+}
+h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+h3{
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+h4{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+h5{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+h6{
+    font-size: 16px;
+    letter-spacing: 1.25px;
+}
+.display-1{
+    font-size: 96px;
+    letter-spacing: 1px;
+}
+.display-2{
+    font-size: 88px;
+    letter-spacing: 1px;
+}
+.display-3{
+    font-size: 72px;
+    letter-spacing: 1px;
+}
+.display-4{
+    font-size: 56px;
+    letter-spacing: 1px;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    nabvar
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  .nav-link{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.25px;
+    color: #141718;
+    &:hover,
+    &:focus:hover,
+    &:visited:hover{
+        color: #04A9FB;
+    }
+    &:focus,
+    &:visited{
+        color: #141718;
+    }
+  }
+
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    buttons
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  .btn{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.25px;
+    color: #ffffff;
+    background-color: #141718;
+    border: 2px solid #141718;
+    border-radius: 8px;
+    &:hover,
+    &:focus:hover,
+    &:visited:hover{
+        color: #141718;
+        background-color: #04A9FB;
+        border: 2px solid #04A9FB;
+    }
+    &:focus,
+    &:visited{
+        color: #ffffff;
+        background-color: #141718;
+        border: 2px solid #04A9FB;
+    }
+  }

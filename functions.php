@@ -14,6 +14,8 @@ defined( 'ABSPATH' ) || exit;
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
  */
 function understrap_remove_scripts() {
+	wp_enqueue_style('google-font-big', 'https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+	wp_enqueue_style('google-font-hind', 'https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 	wp_dequeue_style( 'understrap-styles' );
 	wp_deregister_style( 'understrap-styles' );
 
@@ -21,7 +23,6 @@ function understrap_remove_scripts() {
 	wp_deregister_script( 'understrap-scripts' );
 }
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
-
 
 
 /**
@@ -92,3 +93,9 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+
+register_nav_menus(array(
+	'menu-header' => esc_html__('Header', 'al-min'),
+	'menu-footer' => esc_html__('Footer', 'al-min'),
+));
