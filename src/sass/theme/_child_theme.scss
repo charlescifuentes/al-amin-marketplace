@@ -1,104 +1,221 @@
-body{
-    font-family: "Hind", sans-serif;
-    color: #808080;
-    background-color: #ffffff;
+body {
+	font-family: "Hind", sans-serif;
+	color: #808080;
+	background-color: #ffffff;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: "Big Shoulders Display", sans-serif;
-    font-optical-sizing: auto;
-    text-transform: uppercase;
-    line-height: 120%;
-    font-weight: 700;
-    color: #141718;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Big Shoulders Display", sans-serif;
+	font-optical-sizing: auto;
+	text-transform: uppercase;
+	line-height: 120%;
+	font-weight: 700;
+	color: #141718;
 }
-h1{
-    font-size: 40px;
-    letter-spacing: 1px;
+h1 {
+	font-size: 40px;
+	letter-spacing: 1px;
 }
-h2{
-    font-size: 32px;
-    letter-spacing: 1px;
+h2 {
+	font-size: 32px;
+	letter-spacing: 1px;
 }
-h3{
-    font-size: 28px;
-    letter-spacing: 1px;
+h3 {
+	font-size: 28px;
+	letter-spacing: 1px;
 }
-h4{
-    font-size: 24px;
-    letter-spacing: 1px;
+h4 {
+	font-size: 24px;
+	letter-spacing: 1px;
 }
-h5{
-    font-size: 20px;
-    letter-spacing: 1px;
+h5 {
+	font-size: 20px;
+	letter-spacing: 1px;
 }
-h6{
-    font-size: 16px;
-    letter-spacing: 1.25px;
+h6 {
+	font-size: 16px;
+	letter-spacing: 1.25px;
 }
-.display-1{
-    font-size: 96px;
-    letter-spacing: 1px;
+.display-1 {
+	font-size: 96px;
+	letter-spacing: 1px;
 }
-.display-2{
-    font-size: 88px;
-    letter-spacing: 1px;
+.display-2 {
+	font-size: 88px;
+	letter-spacing: 1px;
 }
-.display-3{
-    font-size: 72px;
-    letter-spacing: 1px;
+.display-3 {
+	font-size: 72px;
+	letter-spacing: 1px;
 }
-.display-4{
-    font-size: 56px;
-    letter-spacing: 1px;
+.display-4 {
+	font-size: 56px;
+	letter-spacing: 1px;
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
     nabvar
   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-  .nav-link{
-    font-family: "Big Shoulders Display", sans-serif;
-    font-optical-sizing: auto;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 1.25px;
-    color: #141718;
-    &:hover,
-    &:focus:hover,
-    &:visited:hover{
-        color: #04A9FB;
-    }
-    &:focus,
-    &:visited{
-        color: #141718;
-    }
-  }
+.nav-link {
+	font-family: "Big Shoulders Display", sans-serif;
+	font-optical-sizing: auto;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1.25px;
+	color: #141718;
+	&:hover,
+	&:focus:hover,
+	&:visited:hover {
+		color: #04a9fb;
+	}
+	&:focus,
+	&:visited {
+		color: #141718;
+	}
+}
 
-  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
     buttons
   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-  .btn{
-    font-family: "Big Shoulders Display", sans-serif;
-    font-optical-sizing: auto;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 1.25px;
-    color: #ffffff;
-    background-color: #141718;
-    border: 2px solid #141718;
-    border-radius: 8px;
-    &:hover,
-    &:focus:hover,
-    &:visited:hover{
-        color: #141718;
-        background-color: #04A9FB;
-        border: 2px solid #04A9FB;
-    }
-    &:focus,
-    &:visited{
+.btn {
+	font-family: "Big Shoulders Display", sans-serif;
+	font-optical-sizing: auto;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1.25px;
+	color: #ffffff;
+	background-color: #141718;
+	border: 2px solid #141718;
+	border-radius: 8px;
+	&:hover,
+	&:focus:hover,
+	&:visited:hover {
+		color: #141718;
+		background-color: #04a9fb;
+		border: 2px solid #04a9fb;
+	}
+	&:focus,
+	&:visited {
+		color: #ffffff;
+		background-color: #141718;
+		border: 2px solid #04a9fb;
+	}
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    footer
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#wrapper-footer-full{
+    padding-top: 48px;
+	background-color: #141718;
+	color: #ffffff;
+	font-family: "Big Shoulders Display", sans-serif;
+	font-optical-sizing: auto;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1.25px;
+    h1,h2,h3,h4,h5,h6 {
         color: #ffffff;
-        background-color: #141718;
-        border: 2px solid #04A9FB;
+        margin-bottom: 16px;
     }
-  }
+    .wp-block-heading{
+        width: fit-content;
+        border-bottom: 1px solid #ffffff;
+        padding-right: 20%;
+        padding-bottom: 4px;
+        font-size: 16px!important;
+        font-weight: 600;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+		list-style: none !important;
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline-block;
+			margin-right: 0;
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+			a {
+                font-family: "Hind", sans-serif!important;
+                font-size: 16px!important;
+                font-weight: 400!important;
+				color: #ffffff !important;
+				text-decoration: none !important;
+                text-transform: capitalize!important;
+                letter-spacing: -0.05px;
+				&:hover,
+				&:focus:hover,
+				&:visited:hover {
+					color: #04a9fb !important;
+				}
+				&:focus,
+				&:visited {
+					color: #ffffff !important;
+				}
+			}
+		}
+	}
+}
+.site-footer {
+	background-color: #141718;
+	&__social {
+		position: relative;
+		color: #ffffff;
+		font-family: "Hind", sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 160%;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: #111517;
+		padding: 36px 0;
+		.social-link {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			color: #ffffff;
+			text-decoration: none;
+			padding: 6px;
+			border-radius: 100px;
+			border: 1px solid #ffffff;
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			margin: 0 8px;
+			&:hover,
+			&:focus:hover,
+			&:visited:hover {
+				color: #04a9fb;
+			}
+			&:focus,
+			&:visited {
+				color: #04a9fb;
+			}
+		}
+	}
+	&__copyright {
+		color: #ffffff;
+		font-family: "Hind", sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 160%;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: #1e1e1e;
+		padding: 24px 0;
+		p {
+			margin: 0;
+		}
+	}
+}
