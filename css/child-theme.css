@@ -15042,6 +15042,13 @@ h6, .h6 {
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
     nabvar
   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
 .nav-link {
   font-family: "Big Shoulders Display", sans-serif;
   font-optical-sizing: auto;
@@ -15056,6 +15063,104 @@ h6, .h6 {
 }
 .nav-link:focus, .nav-link:visited {
   color: #141718;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    nav user
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.nav-user .navbar-nav li {
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav-user .navbar-nav li a {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  color: #141718;
+  text-decoration: none;
+}
+.nav-user .navbar-nav li a:hover, .nav-user .navbar-nav li a:focus:hover, .nav-user .navbar-nav li a:visited:hover {
+  color: #04a9fb;
+}
+.nav-user .navbar-nav li a:focus, .nav-user .navbar-nav li a:visited {
+  color: #141718;
+}
+.nav-user .navbar-nav li:last-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav-user .navbar-nav li:last-of-type:before {
+  content: "/";
+  margin: 0;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    cart icon
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.cart-button {
+  position: relative;
+  color: #141718;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 0 8px;
+}
+.cart-button a {
+  color: #141718;
+}
+.cart-button a:hover, .cart-button a:focus:hover, .cart-button a:visited:hover {
+  color: #04a9fb;
+}
+.cart-button a:focus, .cart-button a:visited {
+  color: #141718;
+}
+
+.cart-contents-count {
+  font-family: "Hind", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #04a9fb;
+  color: #141718;
+  padding: 0 6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    search header
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.woocommerce-product-search {
+  width: 400px;
+  margin-left: 200px;
+}
+.woocommerce-product-search .input-group {
+  border: 1px solid #141718;
+}
+.woocommerce-product-search .input-group .search-field {
+  border: none !important;
+}
+.woocommerce-product-search .input-group .search-field:focus {
+  outline: none !important;
+}
+.woocommerce-product-search .input-group .btn-primary {
+  background-color: transparent !important;
+  border: none !important;
+  color: #141718 !important;
+}
+.woocommerce-product-search .input-group .btn-primary:hover {
+  color: #04a9fb !important;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
@@ -15098,7 +15203,17 @@ h6, .h6 {
   font-weight: 700;
   letter-spacing: 1.25px;
 }
-#wrapper-footer-full h1, #wrapper-footer-full .h1, #wrapper-footer-full h2, #wrapper-footer-full .h2, #wrapper-footer-full h3, #wrapper-footer-full .h3, #wrapper-footer-full h4, #wrapper-footer-full .h4, #wrapper-footer-full h5, #wrapper-footer-full .h5, #wrapper-footer-full h6, #wrapper-footer-full .h6 {
+#wrapper-footer-full h1, #wrapper-footer-full .h1,
+#wrapper-footer-full h2,
+#wrapper-footer-full .h2,
+#wrapper-footer-full h3,
+#wrapper-footer-full .h3,
+#wrapper-footer-full h4,
+#wrapper-footer-full .h4,
+#wrapper-footer-full h5,
+#wrapper-footer-full .h5,
+#wrapper-footer-full h6,
+#wrapper-footer-full .h6 {
   color: #ffffff;
   margin-bottom: 16px;
 }

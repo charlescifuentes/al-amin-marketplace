@@ -60,6 +60,12 @@ h6 {
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
     nabvar
   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.site-header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 0;
+}
 .nav-link {
 	font-family: "Big Shoulders Display", sans-serif;
 	font-optical-sizing: auto;
@@ -76,6 +82,114 @@ h6 {
 	&:focus,
 	&:visited {
 		color: #141718;
+	}
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    nav user
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.nav-user {
+	.navbar-nav{
+		li{
+			padding-left: 0; 
+			padding-right: 0; 
+			a {
+				font-family: "Big Shoulders Display", sans-serif;
+				font-optical-sizing: auto;
+				text-transform: uppercase;
+				font-size: 16px;
+				font-weight: 700;
+				letter-spacing: 1.25px;
+				color: #141718;
+				text-decoration: none;
+				&:hover,
+				&:focus:hover,
+				&:visited:hover {
+					color: #04a9fb;
+				}
+				&:focus,
+				&:visited {
+					color: #141718;
+				}
+			}
+			&:last-of-type{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				&:before{
+					content: "/";
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    cart icon
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.cart-button {
+	position: relative;
+	color: #141718;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1.25px;
+	text-transform: uppercase;
+	border-radius: 50%;
+	padding: 8px;
+	margin: 0 8px;
+	a {
+		color: #141718;
+		&:hover,
+		&:focus:hover,
+		&:visited:hover {
+			color: #04a9fb;
+		}
+		&:focus,
+		&:visited {
+			color: #141718;
+		}
+	}
+}
+
+.cart-contents-count {
+	font-family: "Hind", sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	background-color: #04a9fb;
+	color: #141718;
+	padding: 0 6px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    search header
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.woocommerce-product-search {
+	width: 400px;
+    margin-left: 200px;
+	.input-group {
+		border: 1px solid #141718;
+		.search-field {
+			border: none !important;
+			&:focus {
+				outline: none!important;
+			}
+		}
+		.btn-primary {
+			background-color: transparent !important;
+			border: none !important;
+			color: #141718 !important;
+			&:hover {
+				color: #04a9fb !important;
+			}
+		}
 	}
 }
 
@@ -111,8 +225,8 @@ h6 {
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
     footer
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-#wrapper-footer-full{
-    padding-top: 48px;
+#wrapper-footer-full {
+	padding-top: 48px;
 	background-color: #141718;
 	color: #ffffff;
 	font-family: "Big Shoulders Display", sans-serif;
@@ -121,39 +235,44 @@ h6 {
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 1.25px;
-    h1,h2,h3,h4,h5,h6 {
-        color: #ffffff;
-        margin-bottom: 16px;
-    }
-    .wp-block-heading{
-        width: fit-content;
-        border-bottom: 1px solid #ffffff;
-        padding-right: 20%;
-        padding-bottom: 4px;
-        font-size: 16px!important;
-        font-weight: 600;
-    }
-    .menu {
-        display: flex;
-        flex-direction: column;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: #ffffff;
+		margin-bottom: 16px;
+	}
+	.wp-block-heading {
+		width: fit-content;
+		border-bottom: 1px solid #ffffff;
+		padding-right: 20%;
+		padding-bottom: 4px;
+		font-size: 16px !important;
+		font-weight: 600;
+	}
+	.menu {
+		display: flex;
+		flex-direction: column;
 		list-style: none !important;
 		padding: 0;
 		margin: 0;
 		li {
 			display: inline-block;
 			margin-right: 0;
-            margin-bottom: 8px;
-            &:last-child {
-                margin-bottom: 0;
-            }
+			margin-bottom: 8px;
+			&:last-child {
+				margin-bottom: 0;
+			}
 			a {
-                font-family: "Hind", sans-serif!important;
-                font-size: 16px!important;
-                font-weight: 400!important;
+				font-family: "Hind", sans-serif !important;
+				font-size: 16px !important;
+				font-weight: 400 !important;
 				color: #ffffff !important;
 				text-decoration: none !important;
-                text-transform: capitalize!important;
-                letter-spacing: -0.05px;
+				text-transform: capitalize !important;
+				letter-spacing: -0.05px;
 				&:hover,
 				&:focus:hover,
 				&:visited:hover {

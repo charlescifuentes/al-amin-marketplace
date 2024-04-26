@@ -42,13 +42,13 @@ $container = get_theme_mod('understrap_container_type');
 		</div><!-- .row -->
 
 	</div>
-			<div class="row site-footer__copyright">
-				<?php if (get_field('copyright_footer', 'options')) : ?>
-					<div class="copyright__info col-12">
-						<?php echo get_field('copyright_footer', 'options'); ?>
-					</div>
-				<?php endif; ?>
+	<div class="row site-footer__copyright">
+		<?php if (get_field('copyright_footer', 'options')) : ?>
+			<div class="copyright__info col-12">
+				<?php echo get_field('copyright_footer', 'options'); ?>
 			</div>
+		<?php endif; ?>
+	</div>
 
 </div><!-- .container(-fluid) -->
 
