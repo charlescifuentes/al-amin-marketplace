@@ -34,4 +34,12 @@ $navbar_type       = get_theme_mod('understrap_navbar_type', 'collapse');
 
 			<?php get_template_part('global-templates/navbar', $navbar_type . '-' . $bootstrap_version); ?>
 
+
 		</header><!-- #wrapper-navbar -->
+
+		<div id="side-cart">
+    <div class="side-cart-content">
+        <?php woocommerce_mini_cart(); ?>
+    </div>
+
+</div>

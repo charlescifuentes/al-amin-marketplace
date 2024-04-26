@@ -338,3 +338,23 @@ h6 {
 		}
 	}
 }
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    side cart
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#side-cart {
+    position: fixed;
+    right: -300px; /* Oculta el carrito lateral por defecto */
+    top: 0;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: right 0.3s ease; /* Animación para mostrar y ocultar el carrito lateral */
+}
+
+#side-cart.open {
+    right: 0; /* Muestra el carrito lateral cuando tiene la clase 'open' */
+}
