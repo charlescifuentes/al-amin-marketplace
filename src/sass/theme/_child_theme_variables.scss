@@ -5,3 +5,7 @@
 
 $blue: #04A9FB; // Thats a sample how you could change a BootStrap variable.
 $primary: #04A9FB;  // Once we've changed the value, we'll also make it the primary brand color.
+
+:root{
+	--theme-palette-color-1: #04a9fb;
+}

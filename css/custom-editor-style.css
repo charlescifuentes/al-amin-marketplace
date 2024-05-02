@@ -1,4 +1,8 @@
 @charset "UTF-8";
+:root {
+  --theme-palette-color-1: #04a9fb;
+}
+
 *,
 *::before,
 *::after {

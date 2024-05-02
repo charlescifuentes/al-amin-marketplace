@@ -29,7 +29,7 @@ $container = get_theme_mod('understrap_container_type');
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		
+
 		<?php get_product_search_form(); ?>
 
 
