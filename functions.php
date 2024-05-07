@@ -102,3 +102,16 @@ register_nav_menus(array(
 	'menu-footer-2' => esc_html__('Footer Shop Products', 'al-min'),
 	'menu-footer-3' => esc_html__('Footer Help & Support', 'al-min'),
 ));
+
+
+
+// En tu archivo functions.php
+
+// Añade la función my_custom_get_sidebar al hook woocommerce_sidebar
+add_action( 'woocommerce_sidebar', 'my_custom_get_sidebar' );
+
+// Define la función my_custom_get_sidebar
+function my_custom_get_sidebar() {
+    // Muestra la barra lateral 'left'
+    get_sidebar('left');
+}

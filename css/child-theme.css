@@ -15196,7 +15196,12 @@ p {
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
     buttons
   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.btn, .wpcf7 input[type=submit], .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button {
+.wc-block-components-panel__button,
+.wc-block-cart__submit-button,
+.btn,
+.wpcf7 input[type=submit],
+.woocommerce-notices-wrapper .woocommerce-message a.button,
+.woocommerce-info a.button {
   font-family: "Big Shoulders Display", sans-serif;
   font-optical-sizing: auto;
   text-transform: uppercase;
@@ -15209,15 +15214,53 @@ p {
   border-radius: 0 !important;
   transition: all 0.3s ease-in-out;
 }
-.btn:hover, .wpcf7 input[type=submit]:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .woocommerce-info a.button:hover, .btn:focus:hover, .btn:visited:hover {
+.wc-block-components-panel__button:hover, .wc-block-components-panel__button:focus:hover, .wc-block-components-panel__button:visited:hover,
+.wc-block-cart__submit-button:hover,
+.wc-block-cart__submit-button:focus:hover,
+.wc-block-cart__submit-button:visited:hover,
+.btn:hover,
+.wpcf7 input[type=submit]:hover,
+.woocommerce-notices-wrapper .woocommerce-message a.button:hover,
+.woocommerce-info a.button:hover,
+.btn:focus:hover,
+.btn:visited:hover {
   color: #141718;
   background-color: #04a9fb;
   border: 2px solid #04a9fb;
 }
-.btn:focus, .wpcf7 input[type=submit]:focus, .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .woocommerce-info a.button:focus, .btn:visited, .wpcf7 input[type=submit]:visited, .woocommerce-notices-wrapper .woocommerce-message a.button:visited, .woocommerce-info a.button:visited {
+.wc-block-components-panel__button:focus, .wc-block-components-panel__button:visited,
+.wc-block-cart__submit-button:focus,
+.wc-block-cart__submit-button:visited,
+.btn:focus,
+.wpcf7 input[type=submit]:focus,
+.woocommerce-notices-wrapper .woocommerce-message a.button:focus,
+.woocommerce-info a.button:focus,
+.btn:visited,
+.wpcf7 input[type=submit]:visited,
+.woocommerce-notices-wrapper .woocommerce-message a.button:visited,
+.woocommerce-info a.button:visited {
   color: #ffffff;
   background-color: #141718;
-  border: 2px solid #04a9fb;
+  border: 2px solid #141718;
+}
+
+.wc-block-components-panel__button {
+  padding: 12px 16px !important;
+  margin-bottom: 24px !important;
+}
+.wc-block-components-panel__button:hover .wc-block-components-order-summary__button-text {
+  color: #141718;
+}
+
+.wc-block-components-order-summary__button-text {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  color: #ffffff;
+  padding: 6px 16px !important;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
@@ -15575,6 +15618,19 @@ iframe {
   width: 100%;
 }
 
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quantity input[type=number] {
+  width: 50px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
 /* Button
 --------------------------------------------------------------*/
 button,
@@ -15742,6 +15798,219 @@ input[type=submit]:focus {
   letter-spacing: 1.25px;
   border: 1px solid #111517 !important;
   border-radius: 4px !important;
+}
+
+.hero-products {
+  background-color: #eeeeee;
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+.hero-products .woocommerce-products-header {
+  display: flex;
+  justify-content: center;
+}
+.hero-products .woocommerce-products-header h1, .hero-products .woocommerce-products-header .h1 {
+  font-size: 54px !important;
+}
+.hero-products .woocommerce-breadcrumb {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.tax-product_cat .site-main .woocommerce-breadcrumb,
+.post-type-archive-product .site-main .woocommerce-breadcrumb {
+  display: none !important;
+}
+
+.woocommerce-result-count {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.summary .product_title {
+  font-size: 32px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  color: #111517;
+}
+.summary .woocommerce-Price-amount {
+  font-size: 24px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  color: #111517;
+}
+
+.variations select {
+  padding: 5px 16px 5px 16px;
+}
+.variations .label label {
+  padding: 5px 16px 5px 0;
+  font-size: 16px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  color: #111517;
+  text-transform: uppercase;
+}
+
+.product_meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.product_meta .sku_wrapper,
+.product_meta .posted_in {
+  width: 100%;
+  font-size: 16px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #111517;
+}
+
+.woocommerce-tabs ul.tabs {
+  border-color: #eeeeee !important;
+}
+.woocommerce-tabs ul.tabs:before {
+  border-color: #898989 !important;
+}
+.woocommerce-tabs li {
+  background-color: #eeeeee !important;
+  border-color: #898989 !important;
+  border-radius: 0 !important;
+}
+.woocommerce-tabs li:before, .woocommerce-tabs li:after {
+  display: none;
+}
+.woocommerce-tabs li a {
+  font-family: "Hind", sans-serif !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 160%;
+}
+.woocommerce-tabs li.active {
+  background-color: #ffffff !important;
+}
+
+.xoo-wsc-pname a {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  color: #111517;
+  text-transform: uppercase;
+}
+
+.xoo-wsc-ft-buttons-cont a {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.xoo-wsc-ft-amt-subtotal .xoo-wsc-ft-amt-value,
+.xoo-wsc-ft-amt-subtotal .xoo-wsc-ft-amt-label {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 18px !important;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  color: #111517;
+  text-transform: uppercase;
+}
+
+.product-remove,
+.product-thumbnail,
+.product-name,
+.product-price,
+.product-quantity,
+.product-subtotal {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  color: #111517;
+  text-transform: uppercase;
+}
+
+.woocommerce table.shop_table tbody th {
+  font-weight: 600;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.25px;
+  color: #111517;
+  text-transform: uppercase;
+}
+
+.woocommerce-product-search .search-field {
+  padding: 4px 8px;
+}
+
+.wc-block-components-sale-badge,
+.wc-block-components-formatted-money-amount,
+.wc-block-components-radio-control__label,
+.wc-block-components-totals-item__label,
+.wc-block-components-totals-item__value,
+.wc-block-cart-items__header-total span,
+.wc-block-cart-items__header-image span,
+.wp-block-woocommerce-cart-order-summary-block .wc-block-cart__totals-title {
+  font-family: "Big Shoulders Display", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.25px !important;
+  color: #111517 !important;
+  text-transform: uppercase !important;
+}
+
+.wc-block-components-product-name {
+  font-weight: 600;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 24px !important;
+  letter-spacing: 1.25px;
+  color: #111517;
+  text-transform: uppercase;
+  text-decoration: none !important;
+}
+
+.wc-block-cart-item__remove-link {
+  background-color: transparent !important;
+  color: #111517 !important;
+  border: none !important;
+}
+.wc-block-cart-item__remove-link:hover {
+  color: #04a9fb !important;
+  border: none !important;
+}
+
+.wc-block-components-quantity-selector .wc-block-components-quantity-selector__button {
+  background-color: transparent !important;
+  color: #111517 !important;
+  border: none !important;
+  opacity: 1 !important;
+}
+.wc-block-components-quantity-selector .wc-block-components-quantity-selector__button:hover {
+  background-color: #04a9fb !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.wc-block-components-quantity-selector input.wc-block-components-quantity-selector__input {
+  border: 1px solid hsla(0deg, 0%, 7%, 0.11) !important;
+}
+
+.wc-block-components-product-name {
+  color: #141718 !important;
+  font-size: 16px !important;
+}
+
+.wc-block-components-form .wc-block-components-text-input label, .wc-block-components-text-input label {
+  top: -10px !important;
 }
 
 .has-blue-color,
