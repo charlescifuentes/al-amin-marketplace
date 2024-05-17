@@ -116,3 +116,19 @@ function my_custom_get_sidebar() {
     // Muestra la barra lateral 'left'
     get_sidebar('left');
 }
+
+
+function custom_wc_bundled_item_quantity_input( $markup, $item, $product ) {
+    $quantity_min = $item->get_quantity_min();
+    $quantity_max = $item->get_quantity_max();
+
+    $input = woocommerce_quantity_input( array(
+        'input_name'  => 'bundle_quantity[' . $item->get_id() . ']',
+        'min_value'   => $quantity_min,
+        'max_value'   => $quantity_max,
+        'input_value' => isset( $_REQUEST['bundle_quantity'][ $item->get_id() ] ) ? wc_clean( $_REQUEST['bundle_quantity'][ $item->get_id() ] ) : $quantity_min,
+    ), $product, false );
+
+    return $input;
+}
+add_filter( 'woocommerce_bundled_item_quantity_input', 'custom_wc_bundled_item_quantity_input', 10, 3 );

@@ -16115,6 +16115,20 @@ input[type=submit]:focus {
   color: #ffffff;
 }
 
+.single_variation .bundle_sells_title {
+  padding: 12px 8px;
+  background-color: #6c7275;
+  margin-bottom: 16px;
+}
+.single_variation .bundle_sells_title h3, .single_variation .bundle_sells_title .h3 {
+  font-size: 22px !important;
+  margin-bottom: 0 !important;
+  text-align: center;
+}
+.single_variation .bundled_product_excerpt {
+  display: none !important;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #04A9FB;
