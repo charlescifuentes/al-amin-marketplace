@@ -34,7 +34,16 @@ $navbar_type       = get_theme_mod('understrap_navbar_type', 'collapse');
 
 			<?php get_template_part('global-templates/navbar', $navbar_type . '-' . $bootstrap_version); ?>
 
-
+			<?php
+            if (has_nav_menu('menu-categories')) { ?>
+                <div class="navbar__categories">
+                    <?php
+                    wp_nav_menu(array('theme_location' => 'menu-categories'));
+                    ?>
+                </div><!--/Menu-->
+            <?php
+            }
+            ?>
 		</header><!-- #wrapper-navbar -->
 
 		<div id="side-cart">

@@ -20,3 +20,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 wc_get_template( 'archive-product.php' );
+
+// Agrega el sidebar
+get_sidebar();
