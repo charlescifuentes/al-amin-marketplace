@@ -1143,18 +1143,20 @@ input[type="submit"]:focus {
 }
 
 
-.single_variation{
-	.bundle_sells_title{
-		padding: 12px 8px;
-		background-color: #6c7275;
-		margin-bottom: 16px;
-		h3{
-			font-size: 22px!important;
-			margin-bottom: 0!important;
-			text-align: center;
+.single_variation_wrap{
+	.bundled_product{
+		.bundle_sells_title{
+			padding: 12px 8px 12px 8px!important;
+			background-color: #6c7275!important;
+			margin-bottom: 16px!important;
+			h3{
+				font-size: 22px!important;
+				margin-bottom: 0!important;
+				text-align: center!important;
+			}
 		}
-	}
-	.bundled_product_excerpt{
-		display: none!important;
+		.bundled_product_excerpt{
+			display: none!important;
+		}
 	}
 }
