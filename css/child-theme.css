@@ -16127,7 +16127,10 @@ input[type=submit]:focus {
   color: #ffffff !important;
 }
 .single_variation_wrap .bundled_product .bundled_product_title_inner {
-  font-size: 18px !important;
+  font-size: 16px !important;
+}
+.single_variation_wrap .bundled_product .bundled_product_title_link {
+  font-size: 16px !important;
 }
 .single_variation_wrap .bundled_product .bundled_product_excerpt {
   display: none !important;
@@ -16142,6 +16145,12 @@ input[type=submit]:focus {
 .single_variation_wrap .bundled_product .bundled_product_summary {
   padding-bottom: 8px !important;
   margin-bottom: 8px !important;
+}
+.single_variation_wrap .bundled_product .price {
+  font-size: 16px !important;
+}
+.single_variation_wrap .bundled_product .woocommerce-Price-amount {
+  font-size: 16px !important;
 }
 
 .has-blue-color,
