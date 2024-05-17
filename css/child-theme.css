@@ -16126,6 +16126,9 @@ input[type=submit]:focus {
   text-align: center !important;
   color: #ffffff !important;
 }
+.single_variation_wrap .bundled_product .bundled_product_title {
+  font-size: 16px !important;
+}
 .single_variation_wrap .bundled_product .bundled_product_title_inner {
   font-size: 16px !important;
 }
