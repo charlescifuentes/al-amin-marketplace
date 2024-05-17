@@ -16121,9 +16121,10 @@ input[type=submit]:focus {
   margin-bottom: 16px !important;
 }
 .single_variation_wrap .bundle_sells_title h3, .single_variation_wrap .bundle_sells_title .h3 {
-  font-size: 22px !important;
+  font-size: 18px !important;
   margin-bottom: 0 !important;
   text-align: center !important;
+  color: #ffffff !important;
 }
 .single_variation_wrap .bundled_product .bundled_product_title_inner {
   font-size: 18px !important;
@@ -16132,15 +16133,15 @@ input[type=submit]:focus {
   display: none !important;
 }
 .single_variation_wrap .bundled_product .bundled_product_images {
-  width: 14%;
+  width: 14% !important;
 }
 .single_variation_wrap .bundled_product .details {
-  width: 86%;
-  padding-left: 24px;
+  width: 86% !important;
+  padding-left: 24px !important;
 }
 .single_variation_wrap .bundled_product .bundled_product_summary {
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  padding-bottom: 8px !important;
+  margin-bottom: 8px !important;
 }
 
 .has-blue-color,

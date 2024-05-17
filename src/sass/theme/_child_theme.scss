@@ -1149,9 +1149,10 @@ input[type="submit"]:focus {
 		background-color: #6c7275!important;
 		margin-bottom: 16px!important;
 		h3{
-			font-size: 22px!important;
+			font-size: 18px!important;
 			margin-bottom: 0!important;
 			text-align: center!important;
+			color:#ffffff!important;
 		}
 	}
 	.bundled_product{
@@ -1162,15 +1163,15 @@ input[type="submit"]:focus {
 			display: none!important;
 		}
 		.bundled_product_images{
-			width: 14%;
+			width: 14%!important;
 		}
 		.details{
-			width: 86%;
-			padding-left: 24px;
+			width: 86%!important;
+			padding-left: 24px!important;
 		}
 		.bundled_product_summary{
-			padding-bottom: 8px;
-			margin-bottom: 8px;
+			padding-bottom: 8px!important;
+			margin-bottom: 8px!important;
 		}
 	}
 }
