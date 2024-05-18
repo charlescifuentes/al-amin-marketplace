@@ -15503,6 +15503,10 @@ p {
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 	Home
   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.wrapper#full-width-page-wrapper {
+  padding-top: 0 !important;
+}
+
 .home .wrapper#full-width-page-wrapper {
   padding-top: 0 !important;
 }
