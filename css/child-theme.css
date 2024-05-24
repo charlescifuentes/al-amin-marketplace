@@ -16160,6 +16160,13 @@ input[type=submit]:focus {
   font-size: 16px !important;
 }
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    single product
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.single-product #left-sidebar {
+  display: none !important;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #04A9FB;
