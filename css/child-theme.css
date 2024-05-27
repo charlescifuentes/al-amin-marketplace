@@ -15206,6 +15206,8 @@ p {
   .woocommerce-product-search {
     width: 100%;
     margin-left: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 }
 .woocommerce-product-search .input-group {
@@ -15488,6 +15490,13 @@ p {
 
 #left-sidebar {
   max-width: 25% !important;
+}
+@media screen and (max-width: 640px) {
+  #left-sidebar {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-bottom: 24px !important;
+  }
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
