@@ -501,6 +501,20 @@ p {
 		margin-bottom: 24px!important;
 	}
 }
+.shop_table{
+	@media screen and (max-width: 640px) {
+		& > .btn{
+			width: 100%!important;
+		}
+	}
+}
+.wc-proceed-to-checkout{
+	@media screen and (max-width: 640px) {
+		& > .btn{
+			width: 100%!important;
+		}
+	}
+}
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
     side cart

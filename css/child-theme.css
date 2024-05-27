@@ -15499,6 +15499,18 @@ p {
   }
 }
 
+@media screen and (max-width: 640px) {
+  .shop_table > .btn, .wpcf7 .shop_table > input[type=submit], .woocommerce-notices-wrapper .woocommerce-message .shop_table > a.button, .woocommerce-info .shop_table > a.button {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wc-proceed-to-checkout > .btn, .wpcf7 .wc-proceed-to-checkout > input[type=submit], .woocommerce-notices-wrapper .woocommerce-message .wc-proceed-to-checkout > a.button, .woocommerce-info .wc-proceed-to-checkout > a.button {
+    width: 100% !important;
+  }
+}
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
     side cart
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
