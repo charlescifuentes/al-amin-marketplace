@@ -15096,6 +15096,13 @@ p {
 .custom-logo-link img {
   width: 150px;
 }
+@media screen and (max-width: 1024px) {
+  .custom-logo-link {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
+}
 
 .navbar-toggler {
   display: none !important;
@@ -15208,6 +15215,12 @@ p {
     margin-left: 0;
     margin-top: 16px;
     margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .woocommerce-product-search {
+    width: 560px;
+    margin-left: 0;
   }
 }
 .woocommerce-product-search .input-group {
