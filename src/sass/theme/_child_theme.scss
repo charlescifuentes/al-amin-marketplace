@@ -503,7 +503,7 @@ p {
 }
 .shop_table{
 	@media screen and (max-width: 640px) {
-		& > .btn{
+		.btn.btn-outline-primary{
 			width: 100%!important;
 		}
 	}

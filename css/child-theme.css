@@ -15500,7 +15500,7 @@ p {
 }
 
 @media screen and (max-width: 640px) {
-  .shop_table > .btn, .wpcf7 .shop_table > input[type=submit], .woocommerce-notices-wrapper .woocommerce-message .shop_table > a.button, .woocommerce-info .shop_table > a.button {
+  .shop_table .btn.btn-outline-primary, .shop_table .wpcf7 input[type=submit], .wpcf7 .shop_table input[type=submit], .shop_table .woocommerce-notices-wrapper .woocommerce-message a.btn-outline-primary.button, .woocommerce-notices-wrapper .woocommerce-message .shop_table a.btn-outline-primary.button, .shop_table .woocommerce-info a.btn-outline-primary.button, .woocommerce-info .shop_table a.btn-outline-primary.button {
     width: 100% !important;
   }
 }
