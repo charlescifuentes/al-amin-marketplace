@@ -16233,6 +16233,25 @@ input[type=submit]:focus {
   display: none !important;
 }
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+    cart
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media (min-width: 1170px) {
+  .woocommerce-cart-form {
+    float: left !important;
+  }
+  .cart-collaterals {
+    width: 40% !important;
+    float: right !important;
+  }
+  .cart-collaterals .cart_totals {
+    width: 100% !important;
+  }
+}
+.woocommerce-cart table.cart img {
+  width: 64px !important;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #04A9FB;
