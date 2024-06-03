@@ -132,3 +132,8 @@ function custom_wc_bundled_item_quantity_input( $markup, $item, $product ) {
     return $input;
 }
 add_filter( 'woocommerce_bundled_item_quantity_input', 'custom_wc_bundled_item_quantity_input', 10, 3 );
+
+
+remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
+
+add_action( 'woocommerce_after_cart_table', 'woocommerce_cross_sell_display' );

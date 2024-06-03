@@ -18,13 +18,6 @@
 defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_cart' ); ?>
-<!-- Inicio de la sección Hero -->
-<div class="hero-section">
-    <h1>Carrito</h1>
-    <p>Descripción de la sección Hero</p>
-</div>
-<!-- Fin de la sección Hero -->
-
 
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
