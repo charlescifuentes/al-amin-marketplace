@@ -16239,6 +16239,7 @@ input[type=submit]:focus {
 @media (min-width: 1170px) {
   .woocommerce-cart-form {
     float: left !important;
+    width: 58% !important;
   }
   .woocommerce-cart-form__contents {
     margin-bottom: 48px !important;
@@ -16248,6 +16249,9 @@ input[type=submit]:focus {
     float: right !important;
   }
   .cart-collaterals .cart_totals {
+    width: 100% !important;
+  }
+  .cart-collaterals .wc-proceed-to-checkout .btn-lg, .cart-collaterals .wc-proceed-to-checkout .btn-group-lg > .btn, .cart-collaterals .wc-proceed-to-checkout .wpcf7 .btn-group-lg > input[type=submit], .wpcf7 .cart-collaterals .wc-proceed-to-checkout .btn-group-lg > input[type=submit], .cart-collaterals .wc-proceed-to-checkout .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .cart-collaterals .wc-proceed-to-checkout .btn-group-lg > a.button, .cart-collaterals .wc-proceed-to-checkout .woocommerce-info .btn-group-lg > a.button, .woocommerce-info .cart-collaterals .wc-proceed-to-checkout .btn-group-lg > a.button {
     width: 100% !important;
   }
   .cross-sells h2, .cross-sells .h2,
@@ -16295,12 +16299,10 @@ input[type=submit]:focus {
   align-items: center;
 }
 .cross-sells li.product .product-category {
-  width: 25% !important;
-  display: flex;
-  justify-content: start;
+  display: none !important;
 }
 .cross-sells li.product .price {
-  width: 16% !important;
+  width: 20% !important;
   display: flex;
   justify-content: end;
   font-size: 16px !important;

@@ -1258,6 +1258,7 @@ input[type="submit"]:focus {
 @media (min-width: 1170px){
 	.woocommerce-cart-form{
 		float: left!important;
+		width: 58%!important;
 	}
 	.woocommerce-cart-form__contents{
 		margin-bottom: 48px!important;
@@ -1267,6 +1268,11 @@ input[type="submit"]:focus {
 		float: right!important;
 		.cart_totals {
 			width: 100%!important;
+		}
+		.wc-proceed-to-checkout{
+			.btn-lg{
+				width: 100%!important;
+			}
 		}
 	}
 	.cross-sells,
@@ -1315,12 +1321,10 @@ input[type="submit"]:focus {
 			align-items: center;	
 		}
 		.product-category{
-			width: 25%!important;
-			display: flex;
-			justify-content: start;
+			display: none!important;
 		}
 		.price{
-			width: 16%!important;
+			width: 20%!important;
 			display: flex;
 			justify-content: end;
 			font-size: 16px!important;
