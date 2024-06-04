@@ -16357,9 +16357,12 @@ input[type=submit]:focus {
   font-family: "Big Shoulders Display", sans-serif;
   font-weight: 700;
 }
-.woocommerce-checkout #payment div.payment_box,
-.woocommerce-checkout .woocommerce-checkout-payment {
+.woocommerce-checkout #payment div.payment_box {
   background-color: #ededed !important;
+}
+.woocommerce-checkout div.payment_box::before,
+.woocommerce-checkout .woocommerce-checkout-payment {
+  background-color: #c9c9c9 !important;
 }
 
 .has-blue-color,

@@ -1375,8 +1375,11 @@ input[type="submit"]:focus {
 		font-family: "Big Shoulders Display", sans-serif;
 		font-weight: 700;
 	}
-	#payment div.payment_box,
-	.woocommerce-checkout-payment{
+	#payment div.payment_box{
 		background-color: #ededed!important;
+	}
+	div.payment_box::before,
+	.woocommerce-checkout-payment{
+		background-color: #c9c9c9!important;
 	}
 }
