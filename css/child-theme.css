@@ -16140,7 +16140,8 @@ input[type=submit]:focus {
   font-size: 16px !important;
 }
 
-.wc-block-components-form .wc-block-components-text-input label, .wc-block-components-text-input label {
+.wc-block-components-form .wc-block-components-text-input label,
+.wc-block-components-text-input label {
   top: -10px !important;
 }
 
@@ -16312,6 +16313,53 @@ input[type=submit]:focus {
 
 .woocommerce-cart table.cart img {
   width: 64px !important;
+}
+
+@media (min-width: 1170px) {
+  .woocommerce-checkout .row#customer_details {
+    width: 60% !important;
+    float: left !important;
+  }
+  .woocommerce-checkout .row#customer_details .col-12 {
+    width: 100% !important;
+  }
+  .woocommerce-checkout .woocommerce-checkout-review-order {
+    width: 40% !important;
+    float: right !important;
+  }
+  .woocommerce-checkout h3#order_review_heading, .woocommerce-checkout #order_review_heading.h3 {
+    padding-left: 24px !important;
+  }
+}
+.woocommerce-checkout .form-row {
+  margin-bottom: 0 !important;
+}
+.woocommerce-checkout .form-row label {
+  padding: 16px 0 0 0 !important;
+}
+.woocommerce-checkout .form-row input[type=color], .woocommerce-checkout .form-row input[type=date], .woocommerce-checkout .form-row input[type=datetime-local], .woocommerce-checkout .form-row input[type=datetime], .woocommerce-checkout .form-row input[type=email], .woocommerce-checkout .form-row input[type=month], .woocommerce-checkout .form-row input[type=number], .woocommerce-checkout .form-row input[type=password], .woocommerce-checkout .form-row input[type=range], .woocommerce-checkout .form-row input[type=search], .woocommerce-checkout .form-row input[type=tel], .woocommerce-checkout .form-row input[type=text], .woocommerce-checkout .form-row input[type=time], .woocommerce-checkout .form-row input[type=url], .woocommerce-checkout .form-row input[type=week], .woocommerce-checkout .form-row select, .woocommerce-checkout .form-row textarea {
+  padding: 12px;
+  border-radius: 4px;
+}
+.woocommerce-checkout .product-total {
+  font-size: 16px !important;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+}
+.woocommerce-checkout .product-name {
+  font-size: 12px !important;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+.woocommerce-checkout .order-total,
+.woocommerce-checkout .shipping,
+.woocommerce-checkout .cart-subtotal th {
+  font-size: 16px !important;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+}
+.woocommerce-checkout #payment div.payment_box,
+.woocommerce-checkout .woocommerce-checkout-payment {
+  background-color: #ededed !important;
 }
 
 .has-blue-color,
