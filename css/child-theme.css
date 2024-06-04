@@ -16240,12 +16240,21 @@ input[type=submit]:focus {
   .woocommerce-cart-form {
     float: left !important;
   }
+  .woocommerce-cart-form__contents {
+    margin-bottom: 48px !important;
+  }
   .cart-collaterals {
     width: 40% !important;
     float: right !important;
   }
   .cart-collaterals .cart_totals {
     width: 100% !important;
+  }
+  .cross-sells h2, .cross-sells .h2,
+  .cart_totals h2,
+  .cart_totals .h2 {
+    font-size: 24px !important;
+    margin-bottom: 16px !important;
   }
 }
 .woocommerce-cart table.cart img {

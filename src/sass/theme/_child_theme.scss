@@ -1259,11 +1259,21 @@ input[type="submit"]:focus {
 	.woocommerce-cart-form{
 		float: left!important;
 	}
+	.woocommerce-cart-form__contents{
+		margin-bottom: 48px!important;
+	}
 	.cart-collaterals{
 		width: 40%!important;
 		float: right!important;
 		.cart_totals {
 			width: 100%!important;
+		}
+	}
+	.cross-sells,
+	.cart_totals{
+		h2{
+			font-size: 24px!important;
+			margin-bottom: 16px!important;
 		}
 	}
 }
