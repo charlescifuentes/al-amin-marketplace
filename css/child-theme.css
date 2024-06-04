@@ -16257,6 +16257,34 @@ input[type=submit]:focus {
     margin-bottom: 16px !important;
   }
 }
+.cross-sells li.product {
+  width: 100% !important;
+}
+.cross-sells li.product .woocommerce-loop-product__link {
+  width: 75% !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+.cross-sells li.product .woocommerce-loop-product__link img {
+  width: 64px !important;
+}
+.cross-sells li.product .woocommerce-loop-product__link .woocommerce-loop-product__title {
+  font-size: 16px !important;
+  padding: 0 0 0 0 !important;
+  margin-bottom: 0 !important;
+}
+.cross-sells li.product .add-to-cart-container {
+  width: 25% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cross-sells .price {
+  font-size: 16px !important;
+}
+
 .woocommerce-cart table.cart img {
   width: 64px !important;
 }
