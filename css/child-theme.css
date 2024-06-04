@@ -16275,6 +16275,9 @@ input[type=submit]:focus {
 .cross-sells li.product .woocommerce-loop-product__link .onsale {
   display: none !important;
 }
+.cross-sells li.product .woocommerce-loop-product__link .star-rating {
+  display: none !important;
+}
 .cross-sells li.product .woocommerce-loop-product__link img {
   width: 64px !important;
   margin-bottom: 0 !important;
