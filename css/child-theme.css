@@ -16360,7 +16360,9 @@ input[type=submit]:focus {
 .woocommerce-checkout #payment div.payment_box {
   background-color: #ededed !important;
 }
-.woocommerce-checkout div.payment_box::before,
+.woocommerce-checkout div.payment_box::before {
+  border: 1em solid #ededed;
+}
 .woocommerce-checkout .woocommerce-checkout-payment {
   background-color: #c9c9c9 !important;
 }

@@ -1378,7 +1378,9 @@ input[type="submit"]:focus {
 	#payment div.payment_box{
 		background-color: #ededed!important;
 	}
-	div.payment_box::before,
+	div.payment_box::before{
+		border: 1em solid #ededed;
+	}
 	.woocommerce-checkout-payment{
 		background-color: #c9c9c9!important;
 	}
