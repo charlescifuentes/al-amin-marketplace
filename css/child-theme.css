@@ -16265,11 +16265,12 @@ input[type=submit]:focus {
 }
 .cross-sells li.product .woocommerce-loop-product__link {
   position: relative;
-  width: 75% !important;
+  width: 80% !important;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+  gap: 16px;
 }
 .cross-sells li.product .woocommerce-loop-product__link .onsale {
   display: none !important;
@@ -16282,10 +16283,10 @@ input[type=submit]:focus {
   font-size: 16px !important;
   padding: 0 0 0 0 !important;
   margin-bottom: 0 !important;
-  min-width: 50%;
+  width: 45%;
 }
 .cross-sells li.product .add-to-cart-container {
-  width: 25% !important;
+  width: 20% !important;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -16296,10 +16297,11 @@ input[type=submit]:focus {
   justify-content: start;
 }
 .cross-sells li.product .price {
-  width: 25% !important;
+  width: 16% !important;
   display: flex;
   justify-content: end;
   font-size: 16px !important;
+  text-align: right;
 }
 
 .woocommerce-cart table.cart img {
