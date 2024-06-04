@@ -16254,13 +16254,14 @@ input[type=submit]:focus {
   .cart-collaterals .wc-proceed-to-checkout .btn-lg, .cart-collaterals .wc-proceed-to-checkout .btn-group-lg > .btn, .cart-collaterals .wc-proceed-to-checkout .wpcf7 .btn-group-lg > input[type=submit], .wpcf7 .cart-collaterals .wc-proceed-to-checkout .btn-group-lg > input[type=submit], .cart-collaterals .wc-proceed-to-checkout .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .cart-collaterals .wc-proceed-to-checkout .btn-group-lg > a.button, .cart-collaterals .wc-proceed-to-checkout .woocommerce-info .btn-group-lg > a.button, .woocommerce-info .cart-collaterals .wc-proceed-to-checkout .btn-group-lg > a.button {
     width: 100% !important;
   }
-  .cross-sells h2, .cross-sells .h2,
-  .cart_totals h2,
-  .cart_totals .h2 {
-    font-size: 24px !important;
-    margin-bottom: 16px !important;
-  }
 }
+.cross-sells h2, .cross-sells .h2,
+.cart_totals h2,
+.cart_totals .h2 {
+  font-size: 24px !important;
+  margin-bottom: 16px !important;
+}
+
 .cross-sells li.product {
   width: 100% !important;
   display: flex;
