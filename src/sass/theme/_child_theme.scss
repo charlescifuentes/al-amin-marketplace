@@ -1280,30 +1280,47 @@ input[type="submit"]:focus {
 .cross-sells{
 	li.product {
 		width: 100%!important;
+		display: flex;
+    justify-content: space-between;
+	margin-bottom: 1em!important;
 		.woocommerce-loop-product__link{
+			position: relative;
 			width: 75%!important;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: start;
+			justify-content: space-between;
 			align-items: center;
+			.onsale{
+				display: none!important;
+			}
 			img{
 				width: 64px!important;
+				margin-bottom: 0!important;
 			}
 			.woocommerce-loop-product__title{
 				font-size: 16px !important;
 				padding: 0 0 0 0!important;
 				margin-bottom: 0!important;
+				min-width: 50%;
 			}
 		}
 		.add-to-cart-container{
 			width: 25%!important;
 			display: flex;
-			justify-content: center;
+			justify-content: end;
 			align-items: center;	
 		}
-	}
-	.price{
-		font-size: 16px!important;
+		.product-category{
+			width: 25%!important;
+			display: flex;
+			justify-content: start;
+		}
+		.price{
+			width: 25%!important;
+			display: flex;
+			justify-content: end;
+			font-size: 16px!important;
+		}
 	}
 }
 .woocommerce-cart table.cart img{

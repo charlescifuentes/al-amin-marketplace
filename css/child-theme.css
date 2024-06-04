@@ -16259,29 +16259,46 @@ input[type=submit]:focus {
 }
 .cross-sells li.product {
   width: 100% !important;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em !important;
 }
 .cross-sells li.product .woocommerce-loop-product__link {
+  position: relative;
   width: 75% !important;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
+}
+.cross-sells li.product .woocommerce-loop-product__link .onsale {
+  display: none !important;
 }
 .cross-sells li.product .woocommerce-loop-product__link img {
   width: 64px !important;
+  margin-bottom: 0 !important;
 }
 .cross-sells li.product .woocommerce-loop-product__link .woocommerce-loop-product__title {
   font-size: 16px !important;
   padding: 0 0 0 0 !important;
   margin-bottom: 0 !important;
+  min-width: 50%;
 }
 .cross-sells li.product .add-to-cart-container {
   width: 25% !important;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
-.cross-sells .price {
+.cross-sells li.product .product-category {
+  width: 25% !important;
+  display: flex;
+  justify-content: start;
+}
+.cross-sells li.product .price {
+  width: 25% !important;
+  display: flex;
+  justify-content: end;
   font-size: 16px !important;
 }
 
