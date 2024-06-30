@@ -16367,6 +16367,18 @@ input[type=submit]:focus {
   background-color: #c9c9c9 !important;
 }
 
+.add-to-cart-container {
+  display: none !important;
+}
+
+.woocommerce ul.products li.product a {
+  text-align: center !important;
+}
+
+.wc-block-components-shipping-address {
+  display: none !important;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #04A9FB;
